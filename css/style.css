@@ -6,21 +6,68 @@ html, body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  min-width: 300px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box {
   width: 100%;
 }
 
-@media screen and (min-width: 300px) {
-  .icon { width: 30%; }
-  .portfolio_title { width: 70%; }
-}
-
 @media screen and (min-width: 500px) {
-  .project { width: 50%; }
+  .project {
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+  }
+
+  .project:last-of-type {
+    margin-right: 0;
+  }
 }
 
-@media screen and (min-width: 750px) {
-  .project { width: 33.33%; }
+@media screen and (min-width: 700px) {
+  .project {
+    margin-right: 25px;
+    width: calc((100% - 50px)/3);
+  }
+
+  .project:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .project {
+    margin-right: 50px;
+    width: calc((100% - 100px)/3);
+  }
+
+  .project:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.portfolio_title { width: 70%; }
+
+.icon {
+  width: 30%;
+}
+
+.icon img {
+  max-width: 100%;
+  align-items: baseline;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.project {
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
 }
