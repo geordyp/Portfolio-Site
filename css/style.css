@@ -6,6 +6,7 @@ html, body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 95%;
   min-width: 300px;
   max-width: 1000px;
   margin-left: auto;
@@ -49,15 +50,25 @@ html, body {
   }
 }
 
-.portfolio_title { width: 70%; }
+.portfolio_title {
+  width: 70%;
+  text-align: right;
+}
 
 .icon {
   width: 30%;
 }
 
 .icon img {
-  max-width: 100%;
-  align-items: baseline;
+  width: 100%;
+  max-width: 100px;
+  padding-top: 15px;
+  margin: auto;
+}
+
+.banner {
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .banner img {
@@ -69,5 +80,6 @@ html, body {
 }
 
 .project img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
 }
