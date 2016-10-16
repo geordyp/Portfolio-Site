@@ -1,6 +1,15 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #2D3C49;
+}
+
+a {
+  color: #02B3E4;
 }
 
 .container {
@@ -15,6 +24,24 @@ html, body {
 
 .box {
   width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  h1 { font-size: 1.4em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
+
+  .icon img {
+    padding-top: 5px !important;
+  }
+
+  .portfolio_title {
+    padding-top: 10px;
+  }
+
+  .portfolio_title h3 {
+    margin-top: -10px !important;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -55,6 +82,15 @@ html, body {
   text-align: right;
 }
 
+.portfolio_title h1 {
+  text-transform: uppercase;
+}
+
+.portfolio_title h3 {
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+
 .icon {
   width: 30%;
 }
@@ -62,17 +98,24 @@ html, body {
 .icon img {
   width: 100%;
   max-width: 100px;
-  padding-top: 15px;
+  padding-top: 10px;
   margin: auto;
 }
 
 .banner {
   max-height: 400px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 2px solid #7D97AD;
   overflow: hidden;
 }
 
 .banner img {
   max-width: 100%;
+}
+
+.projects_header {
+  margin-top: 10px;
 }
 
 .project {
@@ -82,4 +125,8 @@ html, body {
 .project img {
   width: 100%;
   max-width: 300px;
+}
+
+.project p {
+  margin-top: -12px;
 }
