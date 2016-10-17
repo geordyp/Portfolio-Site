@@ -13,8 +13,6 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
   width: 95%;
   min-width: 300px;
   max-width: 1000px;
@@ -26,59 +24,23 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 450px) {
-  h1 { font-size: 1.4em; }
-  h2 { font-size: 1.2em; }
-  h3 { font-size: 1em; }
-
-  .icon img {
-    padding-top: 5px !important;
-  }
-
-  .portfolio_title {
-    padding-top: 10px;
-  }
-
-  .portfolio_title h3 {
-    margin-top: -10px !important;
-  }
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-@media screen and (min-width: 500px) {
-  .project {
-    margin-right: 10px;
-    width: calc((100% - 20px)/3);
-  }
-
-  .project:last-of-type {
-    margin-right: 0;
-  }
+.logo {
+  width: 35%;
 }
 
-@media screen and (min-width: 700px) {
-  .project {
-    margin-right: 25px;
-    width: calc((100% - 50px)/3);
-  }
-
-  .project:last-of-type {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .project {
-    margin-right: 50px;
-    width: calc((100% - 100px)/3);
-  }
-
-  .project:last-of-type {
-    margin-right: 0;
-  }
+.logo img {
+  height: 100%;
+  max-height: 100px;
 }
 
 .portfolio_title {
-  width: 70%;
+  width: 65%;
   text-align: right;
 }
 
@@ -91,15 +53,18 @@ a {
   text-transform: uppercase;
 }
 
-.icon {
-  width: 30%;
-}
+@media screen and (max-width: 450px) {
+  h1 { font-size: 1.4em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
 
-.icon img {
-  width: 100%;
-  max-width: 100px;
-  padding-top: 10px;
-  margin: auto;
+  .portfolio_title {
+    padding-top: 10px;
+  }
+
+  .portfolio_title h3 {
+    margin-top: -10px !important;
+  }
 }
 
 .banner {
@@ -118,8 +83,14 @@ a {
   margin-top: 10px;
 }
 
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project {
   text-align: center;
+  margin-top: 10px;
 }
 
 .project img {
@@ -127,6 +98,48 @@ a {
   max-width: 300px;
 }
 
+.project h3 {
+  text-transform: uppercase;
+}
+
 .project p {
-  margin-top: -12px;
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 500px) {
+  article {
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+  }
+
+  article:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  article {
+    margin-right: 25px;
+    width: calc((100% - 50px)/3);
+  }
+
+  article:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  article {
+    margin-right: 50px;
+    width: calc((100% - 100px)/3);
+  }
+
+  article:last-of-type {
+    margin-right: 0;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
 }
